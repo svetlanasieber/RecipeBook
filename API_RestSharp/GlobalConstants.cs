@@ -1,12 +1,13 @@
+using System.Net;
 using Newtonsoft.Json.Linq;
 using RestSharp;
-using System.Net;
+using NUnit.Framework;
 
-namespace RecipeBook
+namespace ApiTests
 {
     public static class GlobalConstants
     {
-        public const string BaseUrl = "http://localhost:5000/api";
+        public const string BaseUrl = "http://localhost:5001/api";
 
         public static string AuthenticateUser(string email, string password)
         {
